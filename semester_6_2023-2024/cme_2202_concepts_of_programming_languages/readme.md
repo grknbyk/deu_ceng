@@ -1,6 +1,6 @@
 # Diabetes Probability Calculation Software
 
-![Assignment Screenshot](deu_ceng\semester_6_2023-2024\cme_2202_concepts_of_programming_languages\ss.jpg)
+![Assignment Screenshot](semester_6_2023-2024\cme_2202_concepts_of_programming_languages\ss.jpg)
 
 **T.C. DOKUZ EYLUL UNIVERSITY**  
 **FACULTY OF ENGINEERING**  
