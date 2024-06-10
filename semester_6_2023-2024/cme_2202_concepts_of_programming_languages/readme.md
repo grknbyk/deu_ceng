@@ -1,14 +1,6 @@
 # Diabetes Probability Calculation Software
 
-![Assignment Screenshot](semester_6_2023-2024\cme_2202_concepts_of_programming_languages\ss.jpg)
-
-**T.C. DOKUZ EYLUL UNIVERSITY**  
-**FACULTY OF ENGINEERING**  
-**DEPARTMENT OF COMPUTER ENGINEERING**  
-**2023 – 2024 SPRING SEMESTER**  
-**CME 3202 CONCEPTS OF PROGRAMMING LANGUAGES**  
-
-**Due Date:** 23:55 – 21.05.2024
+![Assignment Screenshot](ss.jpg)
 
 ## Description
 
