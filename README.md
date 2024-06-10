@@ -1,6 +1,8 @@
-# Assignments and Projects at [Computer Engineering Department of Dokuz Eylül University](https://ceng.deu.edu.tr/en/)
+# Assignments and Projects [Computer Engineering Department of Dokuz Eylül University](https://ceng.deu.edu.tr/en/)
 
 This repository contains assignments and projects completed during my studies at the Computer Engineering Department of Dokuz Eylül University.
+
+---
 
 ## Semester 1 (2021-2022)
 
@@ -16,6 +18,8 @@ This repository contains assignments and projects completed during my studies at
 - [Project 1: Triangle Battleship](deu_ceng/semester_1_2021-2022/cme_1251_project_based_learning_1/project_1_triangle_battleship)
 - [Project 2: 11 22 33](deu_ceng/semester_1_2021-2022/cme_1251_project_based_learning_1/project_2_11_22_33)
 
+---
+
 ## Semester 2 (2021-2022)
 
 ### CME 1212 Algorithms and Programming 2
@@ -26,6 +30,8 @@ This repository contains assignments and projects completed during my studies at
 - [Columns](deu_ceng/semester_2_2021-2022/cme_1252_project_based_learning_2/columns)
 - [Star Trek Warp Wars](deu_ceng/semester_2_2021-2022/cme_1252_project_based_learning_2/star_trek_warp_wars)
 
+---
+
 ## Semester 3 (2022-2023)
 
 ### CME 2205 Probability and Statistics
@@ -34,6 +40,8 @@ This repository contains assignments and projects completed during my studies at
 ### CME 2201 Data Structures
 - [Maze Solver](deu_ceng/semester_3_2022-2023/cme_2201_data_structures/maze_solver)
 - [Relevant File Finder](deu_ceng/semester_3_2022-2023/cme_2201_data_structures/relevant_file_finder)
+
+---
 
 ## Semester 4 (2022-2023)
 
@@ -48,6 +56,8 @@ This repository contains assignments and projects completed during my studies at
 ### CME 2210 Object-Oriented Analysis and Design
 - [Hospital Management System (Java FX GUI Desktop Application)](deu_ceng/semester_4_2022-2023/cme_2210_object_oriented_analysis_and_design/hospital_management_system)
 
+---
+
 ## Semester 5 (2023-2024)
 
 ### CME 3201 Database Management Systems
@@ -55,6 +65,8 @@ This repository contains assignments and projects completed during my studies at
 
 ### CME 3205 Operating Systems
 - [Array Addition Server, Socket Programming Exercise](deu_ceng/semester_5_2023-2024/cme_3205_operating_systems)
+
+---
 
 ## Semester 6 (2023-2024)
 
@@ -73,4 +85,4 @@ This repository contains assignments and projects completed during my studies at
 - [LAB 09 - Parking Sensor](deu_ceng/semester_6_2023-2024/cme_3208_principles_of_embedded_systems/LAB%2009%20-%20Parking%20Sensor)
 
 ### ETE 3007 Fundamentals of Robotics
-- [Smart Servo Motor Software (Python)](deu_ceng/semester_6_2023-2024/ete_3007_fundamentals_of_robotics/)
+- [Smart Servo Motor Control Software (Python)](deu_ceng/semester_6_2023-2024/ete_3007_fundamentals_of_robotics/)
