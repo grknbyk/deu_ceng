@@ -15,13 +15,12 @@ This project is a simple array addition server implemented in C language. The se
 - Linux operating system
 
 ## Example Usage
-<br>
-telnet localhost 60000
-Hello, this is Array Addition Server!
-Please enter the first array for addition:
-105 449 445 842 292 655 959 6 404 149
-Please enter the second array for addition:
-999 601 78 502 156 482 805 670 834 27
-The result of array addition are given below:
-1 105 50 524 344 449 138 764 677 238 176
-Thank you for Array Addition Server! Good Bye!
+<br>telnet localhost 60000
+<br>Hello, this is Array Addition Server!
+<br>Please enter the first array for addition:
+<br>105 449 445 842 292 655 959 6 404 149
+<br>Please enter the second array for addition:
+<br>999 601 78 502 156 482 805 670 834 27
+<br>The result of array addition are given below:
+<br>1 105 50 524 344 449 138 764 677 238 176
+<br>Thank you for Array Addition Server! Good Bye!
