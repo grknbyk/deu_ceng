@@ -2,7 +2,7 @@
 
 This repository contains assignments and projects completed during my studies at the Computer Engineering Department of Dokuz Eylül University.
 
----
+<br><br>
 
 ## Semester 1 (2021-2022)
 
@@ -18,7 +18,7 @@ This repository contains assignments and projects completed during my studies at
 - [Project 1: Triangle Battleship](deu_ceng/semester_1_2021-2022/cme_1251_project_based_learning_1/project_1_triangle_battleship)
 - [Project 2: 11 22 33](deu_ceng/semester_1_2021-2022/cme_1251_project_based_learning_1/project_2_11_22_33)
 
----
+<br><br>
 
 ## Semester 2 (2021-2022)
 
@@ -30,7 +30,7 @@ This repository contains assignments and projects completed during my studies at
 - [Columns](deu_ceng/semester_2_2021-2022/cme_1252_project_based_learning_2/columns)
 - [Star Trek Warp Wars](deu_ceng/semester_2_2021-2022/cme_1252_project_based_learning_2/star_trek_warp_wars)
 
----
+<br><br>
 
 ## Semester 3 (2022-2023)
 
@@ -41,7 +41,7 @@ This repository contains assignments and projects completed during my studies at
 - [Maze Solver](deu_ceng/semester_3_2022-2023/cme_2201_data_structures/maze_solver)
 - [Relevant File Finder](deu_ceng/semester_3_2022-2023/cme_2201_data_structures/relevant_file_finder)
 
----
+<br><br>
 
 ## Semester 4 (2022-2023)
 
@@ -56,7 +56,7 @@ This repository contains assignments and projects completed during my studies at
 ### CME 2210 Object-Oriented Analysis and Design
 - [Hospital Management System (Java FX GUI Desktop Application)](deu_ceng/semester_4_2022-2023/cme_2210_object_oriented_analysis_and_design/hospital_management_system)
 
----
+<br><br>
 
 ## Semester 5 (2023-2024)
 
@@ -66,7 +66,7 @@ This repository contains assignments and projects completed during my studies at
 ### CME 3205 Operating Systems
 - [Array Addition Server, Socket Programming Exercise](deu_ceng/semester_5_2023-2024/cme_3205_operating_systems)
 
----
+<br><br>
 
 ## Semester 6 (2023-2024)
 
