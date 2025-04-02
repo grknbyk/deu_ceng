@@ -71,7 +71,7 @@ This repository contains assignments and projects completed during my studies at
 ## Semester 6 (2023-2024)
 
 #### CME 2202 Concepts of Programming Languages
-- [Diabetes Prediction Tool](semester_6_2023-2024/cme_2202_concepts_of_programming_languages)
+- [Diabetes Prediction Tool](semester_6_2023-2024/cme_3202_concepts_of_programming_languages)
 
 #### CME 3208 Principles of Embedded Systems
 - [LAB 01 - Binary Counter](semester_6_2023-2024/cme_3208_principles_of_embedded_systems/LAB%2001%20-%20Binary%20Counter)
