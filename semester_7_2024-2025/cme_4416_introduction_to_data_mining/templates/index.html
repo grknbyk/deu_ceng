@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Rain Prediction Model</h1>
+        <div class="card shadow">
+            <div class="card-body">
+                <form id="predictionForm">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Yesterday Humidity at 3PM (%)</label>
+                            <input type="number" class="form-control" name="humidity3pm" min="0" max="100" required value="80">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Yesterday Humidity at 9AM (%)</label>
+                            <input type="number" class="form-control" name="humidity9am" min="0" max="100" required value="90">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Yesterday Pressure at 3PM (hPa)</label>
+                            <input type="number" class="form-control" name="pressure3pm" min="900" max="1100" required value="1012">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Yesterday Pressure at 9AM (hPa)</label>
+                            <input type="number" class="form-control" name="pressure9am" min="900" max="1100" required value="1010">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Yesterday Temperature at 3PM (°C)</label>
+                            <input type="number" class="form-control" name="temp3pm" min="-20" max="50" required value="25">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Yesterday Temperature at 9AM (°C)</label>
+                            <input type="number" class="form-control" name="temp9am" min="-20" max="50" required value="15">
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 mt-4">
+                        <button type="submit" class="btn btn-primary">Predict for Today</button>
+                    </div>
+                </form>
+                
+                <div id="result" class="mt-4 row g-3">
+                    <h4 id="predictionText" class="col-md-6 text-center"></h4>
+                    <canvas id="predictionChart" class="col-md-6" width="300" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        let predictionChart = null;
+
+        function createChart(probability, isRain) {
+            const ctx = document.getElementById('predictionChart').getContext('2d');
+            
+            if (predictionChart) {
+                predictionChart.destroy();
+            }
+
+            const bgColor = isRain ? ['#4CAF50', '#f44336'] : ['#f44336', '#4CAF50'];
+            const data = [probability, 100 - probability];
+            const labels = [`Rain Probability: ${data[0].toFixed(2)}%`, `No Rain Probability: ${data[1].toFixed(2)}%`];
+            
+            predictionChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: bgColor,
+                        borderColor: ['#ffffff', '#ffffff'],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: false, // Disable responsiveness
+                    maintainAspectRatio: false,
+                    cutout: '70%',
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $('#predictionForm').on('submit', function(e) {
+                e.preventDefault();
+                
+                $.ajax({
+                    url: '/predict',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        const isRain = response.prediction === 'Rain';
+                        const probability = response.probability;
+                        
+                        createChart(probability, isRain);
+                        $('#predictionText').html(
+                            `<strong>Prediction:</strong> ${response.prediction}<br>
+                             <strong>Confidence:</strong> ${probability}%`
+                        );
+                    },
+                    error: function() {
+                        $('#result').html('<div class="alert alert-danger">Error occurred during prediction</div>');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
