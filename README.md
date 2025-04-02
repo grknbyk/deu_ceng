@@ -86,3 +86,13 @@ This repository contains assignments and projects completed during my studies at
 
 #### ETE 3007 Fundamentals of Robotics
 - [Smart Servo Motor Control Software (Python)](semester_6_2023-2024/ete_3007_fundamentals_of_robotics/)
+
+<br>
+
+## Semester 7 (2024-2025)
+
+#### CME 4434 Data Warehouses and Business Intelligence
+- [Flight Booking - Machine Learning Project](semester_7_2024-2025/cme_4434_data_warehouses_and_business_inteligence)
+
+#### CME 4416 Introduction to Data Mining
+- [Rainfall Prediction for next day](semester_7_2024-2025/cme_4416_introduction_to_data_mining)
